@@ -11,7 +11,7 @@ const SalesData = styled.div``;
 export default () => {
   return (
     <Container>
-      매출<SalesData>₩1,7000,000</SalesData>
+      매출<SalesData>(₩1,7000,000)</SalesData>
     </Container>
   );
 };

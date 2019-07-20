@@ -11,7 +11,7 @@ const RegMemberData = styled.div``;
 export default () => {
   return (
     <Container>
-      가입 회원<RegMemberData>77명</RegMemberData>
+      가입 회원<RegMemberData>(77명)</RegMemberData>
     </Container>
   );
 };

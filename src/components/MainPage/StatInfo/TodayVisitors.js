@@ -11,7 +11,7 @@ const TodayVisitorData = styled.div``;
 export default () => {
   return (
     <Container>
-      오늘의 방문 회원 수<TodayVisitorData>132명</TodayVisitorData>
+      오늘의 방문 회원 수<TodayVisitorData>(132명)</TodayVisitorData>
     </Container>
   );
 };

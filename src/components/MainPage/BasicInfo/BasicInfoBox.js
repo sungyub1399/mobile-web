@@ -37,7 +37,7 @@ export default () => {
         GYM BOX
         <MemText>회원 수</MemText>
       </FitnessName>
-      <FitnessMemData>1000</FitnessMemData>
+      <FitnessMemData>(1000)</FitnessMemData>
     </Container>
   );
 };
