@@ -6,9 +6,12 @@ import {
   faChartBar,
   faCog,
   faFileAlt,
-  faEnvelope
+  faEnvelope,
+  faDumbbell,
+  faLockOpen
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Transition } from "react-transition-group";
 
 const SideBar = styled.nav`
   width: 60%;
@@ -38,32 +41,44 @@ const Group = styled.div`
 
 export default () => {
   return (
-    <SideBar>
-      <Link to="/">
-        <Group>
-          <FontAwesomeIcon icon={faHome} /> Home
-        </Group>
-      </Link>
-      <Link to="/stat">
-        <Group>
-          <FontAwesomeIcon icon={faChartBar} /> 통계
-        </Group>
-      </Link>
-      <Link to="/CourseReg">
-        <Group>
-          <FontAwesomeIcon icon={faFileAlt} /> 수업등록
-        </Group>
-      </Link>
-      <Link to="/message">
-        <Group>
-          <FontAwesomeIcon icon={faEnvelope} /> 문자보내기
-        </Group>
-      </Link>
-      <Link to="/setting">
-        <Group>
-          <FontAwesomeIcon icon={faCog} /> 설정
-        </Group>
-      </Link>
-    </SideBar>
+    <Transition>
+      <SideBar>
+        <Link to="/">
+          <Group>
+            <FontAwesomeIcon icon={faHome} /> Home
+          </Group>
+        </Link>
+        <Link to="/stat">
+          <Group>
+            <FontAwesomeIcon icon={faChartBar} /> 통계
+          </Group>
+        </Link>
+        <Link to="/courseReg">
+          <Group>
+            <FontAwesomeIcon icon={faFileAlt} /> 수업등록
+          </Group>
+        </Link>
+        <Link to="/ptReg">
+          <Group>
+            <FontAwesomeIcon icon={faDumbbell} /> PT등록
+          </Group>
+        </Link>
+        <Link to="/lockerReg">
+          <Group>
+            <FontAwesomeIcon icon={faLockOpen} /> 락커등록
+          </Group>
+        </Link>
+        <Link to="/message">
+          <Group>
+            <FontAwesomeIcon icon={faEnvelope} /> 문자보내기
+          </Group>
+        </Link>
+        <Link to="/setting">
+          <Group>
+            <FontAwesomeIcon icon={faCog} /> 설정
+          </Group>
+        </Link>
+      </SideBar>
+    </Transition>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import BasicInfoBox from "../MainPage/BasicInfo/BasicInfoBox";
-import OtherInfoBox from "../MainPage/OtherInfo/OtherInfoBox";
+import GraphInfoBox from "../MainPage/GraphInfo/GraphInfoBox";
 import StatInfoBox from "../MainPage/StatInfo/StatInfoBox";
 import styled from "styled-components";
 
@@ -15,7 +15,7 @@ export default () => {
       <Container>
         <BasicInfoBox />
         <StatInfoBox />
-        <OtherInfoBox />
+        <GraphInfoBox />
       </Container>
     </>
   );

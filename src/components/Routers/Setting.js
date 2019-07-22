@@ -1,9 +1,12 @@
 import React from "react";
+import styled from "styled-components";
+
+const Container = styled.div``;
 
 export default () => {
   return (
-    <>
-      <h1>Setting 입니다</h1>
-    </>
+    <Container>
+      <h1>setting page</h1>
+    </Container>
   );
 };

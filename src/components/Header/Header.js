@@ -29,7 +29,7 @@ export default ({ isMenuOpen, handleSetIsMenuOpen }) => {
           icon={faBars}
           size="2x"
         />
-        <LogoName>FIT: Mobile Version</LogoName>
+        <LogoName>GYM BOX</LogoName>
       </Container>
       {isMenuOpen && <SideBar />}
     </>
